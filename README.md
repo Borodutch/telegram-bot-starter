@@ -1,6 +1,6 @@
 # Telegram bot template based on telegraf.js.org
 
-Please, enjoy this starter template for elegram bots based on telegraf.js.org. It includes most common middlewares used by me, MongoDB integration, language picker and internationalization and shows basic encapsulation techniques used by me.
+Please, enjoy this starter template for Telegram bots based on telegraf.js.org. It includes most common middlewares used by me, MongoDB integration, language picker and internationalization and shows basic encapsulation techniques used by me.
 
 # Installation and local launch
 
