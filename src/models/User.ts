@@ -1,7 +1,7 @@
 // Dependencies
-import { prop, Typegoose } from 'typegoose'
+import { prop, getModelForClass } from '@typegoose/typegoose'
 
-export class User extends Typegoose {
+export class User {
   @prop({ required: true, index: true, unique: true })
   id: number
 
@@ -10,7 +10,7 @@ export class User extends Typegoose {
 }
 
 // Get User model
-const UserModel = new User().getModelForClass(User, {
+const UserModel = getModelForClass(User, {
   schemaOptions: { timestamps: true },
 })
 
