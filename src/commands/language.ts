@@ -1,10 +1,10 @@
 // Dependencies
-import { Telegraf, ContextMessageUpdate, Markup as m, Extra } from 'telegraf'
+import { Telegraf, Context, Markup as m, Extra } from 'telegraf'
 import { readdirSync, readFileSync } from 'fs'
 import { safeLoad } from 'js-yaml'
 import { ExtraEditMessage } from 'telegraf/typings/telegram-types'
 
-export function setupLanguage(bot: Telegraf<ContextMessageUpdate>) {
+export function setupLanguage(bot: Telegraf<Context>) {
   bot.command('language', ctx => {
     ctx.reply(ctx.i18n.t('language'), {
       reply_markup: languageKeyboard(),
