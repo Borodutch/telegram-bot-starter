@@ -21,7 +21,7 @@ export async function findUser(id: number) {
     try {
       user = await new UserModel({ id }).save()
     } catch (err) {
-      user = await UserModel.findOne({ id })
+      // user = await UserModel.findOne({ id })
     }
   }
   return user
