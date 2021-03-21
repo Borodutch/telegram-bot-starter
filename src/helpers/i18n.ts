@@ -1,4 +1,3 @@
-// Dependencies
 import I18N from 'telegraf-i18n'
 import Telegraf, { Context } from 'telegraf'
 const dirtyI18N = require('telegraf-i18n')

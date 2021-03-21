@@ -1,4 +1,3 @@
-// Dependencies
 import { prop, getModelForClass } from '@typegoose/typegoose'
 
 export class User {
