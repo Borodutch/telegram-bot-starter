@@ -1,33 +1,32 @@
-import { Telegraf, Context, Markup as m, Extra } from 'telegraf'
+import { Telegraf, Context, Markup as m } from 'telegraf'
 import { readdirSync, readFileSync } from 'fs'
 import { safeLoad } from 'js-yaml'
-import { ExtraEditMessage } from 'telegraf/typings/telegram-types'
 
 export function setupLanguage(bot: Telegraf<Context>) {
   bot.command('language', (ctx) => {
-    ctx.reply(ctx.i18n.t('language'), {
-      reply_markup: languageKeyboard(),
-    })
+    ctx.reply(ctx.i18n.t('language'), languageKeyboard())
   })
 
   bot.action(
     localesFiles().map((file) => file.split('.')[0]),
     async (ctx) => {
       let user = ctx.dbuser
-      user.language = ctx.callbackQuery.data
-      user = await (user as any).save()
-      const message = ctx.callbackQuery.message
+      if ("data" in ctx.callbackQuery) {
+        user.language = ctx.callbackQuery.data
+        user = await (user as any).save()
+        const message = ctx.callbackQuery.message
 
-      const anyI18N = ctx.i18n as any
-      anyI18N.locale(ctx.callbackQuery.data)
+        const anyI18N = ctx.i18n as any
+        anyI18N.locale(ctx.callbackQuery.data)
 
-      await ctx.telegram.editMessageText(
-        message.chat.id,
-        message.message_id,
-        undefined,
-        ctx.i18n.t('language_selected'),
-        Extra.HTML(true) as ExtraEditMessage
-      )
+        await ctx.telegram.editMessageText(
+          message.chat.id,
+          message.message_id,
+          undefined,
+          ctx.i18n.t('language_selected'),
+          { parse_mode: 'HTML' }
+        )
+      }
     }
   )
 }
@@ -42,12 +41,12 @@ function languageKeyboard() {
     ).name
     if (index % 2 == 0) {
       if (index === 0) {
-        result.push([m.callbackButton(localeName, localeCode)])
+        result.push([m.button.callback(localeName, localeCode)])
       } else {
-        result[result.length - 1].push(m.callbackButton(localeName, localeCode))
+        result[result.length - 1].push(m.button.callback(localeName, localeCode))
       }
     } else {
-      result[result.length - 1].push(m.callbackButton(localeName, localeCode))
+      result[result.length - 1].push(m.button.callback(localeName, localeCode))
       if (index < locales.length - 1) {
         result.push([])
       }
