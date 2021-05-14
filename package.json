@@ -25,7 +25,7 @@
     "dotenv": "^8.2.0",
     "module-alias": "^2.2.2",
     "mongoose": "5.10.18",
-    "telegraf": "^3.38.0",
+    "telegraf": "^4.3.0",
     "telegraf-i18n": "^6.6.0",
     "typescript": "^4.2.3"
   },
