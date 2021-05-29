@@ -23,5 +23,5 @@ setupLanguage(bot)
 
 // Start bot
 bot.launch().then(() => {
-  console.info('Bot is up and running')
+  console.info(`Bot ${bot.botInfo.username} is up and running`)
 })
