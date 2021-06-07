@@ -21,7 +21,8 @@ bot.command(['help', 'start'], sendHelp)
 bot.command('language', sendLanguage)
 // Actions
 bot.action(localeActions, setLanguage)
-
+// Errors
+bot.catch(console.error)
 // Start bot
 bot.launch().then(() => {
   console.info(`Bot ${bot.botInfo.username} is up and running`)
