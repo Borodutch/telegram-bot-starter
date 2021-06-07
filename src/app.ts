@@ -1,3 +1,4 @@
+import { localeActions } from './handlers/language'
 // Setup @/ aliases for modules
 import 'module-alias/register'
 // Config dotenv
@@ -5,21 +6,21 @@ import * as dotenv from 'dotenv'
 dotenv.config({ path: `${__dirname}/../.env` })
 // Dependencies
 import { bot } from '@/helpers/bot'
-import { checkTime } from '@/middlewares/checkTime'
-import { setupHelp } from '@/commands/help'
-import { setupI18N } from '@/helpers/i18n'
-import { setupLanguage } from '@/commands/language'
+import { ignoreOldMessageUpdates } from '@/middlewares/ignoreOldMessageUpdates'
+import { sendHelp } from '@/handlers/sendHelp'
+import { i18n, attachI18N } from '@/helpers/i18n'
+import { setLanguage, sendLanguage } from '@/handlers/language'
 import { attachUser } from '@/middlewares/attachUser'
 
-// Check time
-bot.use(checkTime)
-// Attach user
+// Middlewares
+bot.use(ignoreOldMessageUpdates)
 bot.use(attachUser)
-// Setup localization
-setupI18N(bot)
-// Setup commands
-setupHelp(bot)
-setupLanguage(bot)
+bot.use(i18n.middleware(), attachI18N)
+// Commands
+bot.command(['help', 'start'], sendHelp)
+bot.command('language', sendLanguage)
+// Actions
+bot.action(localeActions, setLanguage)
 
 // Start bot
 bot.launch().then(() => {

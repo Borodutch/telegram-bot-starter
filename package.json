@@ -15,19 +15,19 @@
     "watch-js": "nodemon dist/app.js"
   },
   "devDependencies": {
-    "@types/mongoose": "^5.10.4",
-    "@types/node": "^14.14.35",
-    "concurrently": "^6.0.0",
+    "@types/mongoose": "^5.10.18",
+    "@types/node": "^15.12.1",
+    "concurrently": "^6.2.0",
     "nodemon": "^2.0.7"
   },
   "dependencies": {
-    "@typegoose/typegoose": "^7.6.0",
-    "dotenv": "^8.2.0",
+    "@typegoose/typegoose": "^7.6.1",
+    "dotenv": "^10.0.0",
     "module-alias": "^2.2.2",
     "mongoose": "5.10.18",
     "telegraf": "^4.3.0",
     "telegraf-i18n": "^6.6.0",
-    "typescript": "^4.2.3"
+    "typescript": "^4.3.2"
   },
   "_moduleAliases": {
     "@": "dist"

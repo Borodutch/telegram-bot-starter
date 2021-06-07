@@ -1,6 +1,6 @@
 import { Context } from 'telegraf'
 
-export async function checkTime(ctx: Context, next: () => any) {
+export async function ignoreOldMessageUpdates(ctx: Context, next: () => any) {
   if (ctx.updateType === 'message') {
     if (new Date().getTime() / 1000 - ctx.message.date < 5 * 60) {
       return next()

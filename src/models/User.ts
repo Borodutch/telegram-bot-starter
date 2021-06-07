@@ -17,6 +17,7 @@ const UserModel = getModelForClass(User, {
 export async function findUser(id: number) {
   let user = await UserModel.findOne({ id })
   if (!user) {
+    // Try/catch is used to avoid race conditions
     try {
       user = await new UserModel({ id }).save()
     } catch (err) {
