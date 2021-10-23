@@ -4,7 +4,7 @@ Please, enjoy this starter template for Telegram bots based on [grammY](https://
 
 # Installation and local launch
 
-1. Clone this repo: `git clone https://github.com/Borodutch/telegram-bot-template`
+1. Clone this repo: `git clone https://github.com/Borodutch/telegram-bot-starter`
 2. Launch the [mongo database](https://www.mongodb.com/) locally
 3. Create `.env` with the environment variables listed below
 4. Run `yarn` in the root folder
