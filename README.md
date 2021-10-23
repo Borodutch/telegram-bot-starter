@@ -1,4 +1,4 @@
-# Telegram bot template based on [grammY](https://grammy.dev)
+# Telegram bot starter based on [grammY](https://grammy.dev)
 
 Please, enjoy this starter template for Telegram bots based on [grammY](https://grammy.dev). It includes most common middlewares, MongoDB integration, language picker and internationalization and shows basic encapsulation techniques used by me.
 
