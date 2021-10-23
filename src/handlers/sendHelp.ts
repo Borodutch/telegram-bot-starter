@@ -1,5 +1,7 @@
-import { Context } from 'telegraf'
+import Context from '@/models/Context'
 
 export function sendHelp(ctx: Context) {
-  return ctx.replyWithHTML(ctx.i18n.t('help'))
+  return ctx.reply(ctx.i18n.t('help'), {
+    parse_mode: 'HTML',
+  })
 }

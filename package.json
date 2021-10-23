@@ -1,9 +1,9 @@
 {
-  "name": "telegraf-template",
+  "name": "telegram-bot-template",
   "version": "1.0.0",
-  "description": "Telegram bot template based on telegraf.js.org",
+  "description": "Telegram bot template based on grammY",
   "main": "dist/app.js",
-  "repository": "https://github.com/backmeupplz/telegraf-template",
+  "repository": "https://github.com/Borodutch/telegram-bot-template",
   "author": "backmeupplz <backmeupplz@gmail.com>",
   "license": "MIT",
   "private": false,
@@ -12,22 +12,32 @@
     "develop": "concurrently -k -i -p \"[{name}]\" -n \"Node,TypeScript\" -c \"yellow.bold,cyan.bold\" \"yarn watch-js\" \"yarn watch-ts\"",
     "build-ts": "tsc --skipLibCheck",
     "watch-ts": "tsc -w --skipLibCheck",
-    "watch-js": "nodemon dist/app.js"
-  },
-  "devDependencies": {
-    "@types/mongoose": "^5.10.18",
-    "@types/node": "^15.12.1",
-    "concurrently": "^6.2.0",
-    "nodemon": "^2.0.7"
+    "watch-js": "nodemon dist/app.js",
+    "pretty": "prettier --check src",
+    "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src"
   },
   "dependencies": {
-    "@typegoose/typegoose": "^7.6.1",
+    "@grammyjs/i18n": "^0.3.0",
+    "@grammyjs/runner": "^1.0.2",
+    "@typegoose/typegoose": "^9.2.0",
+    "grammy": "^1.3.4",
+    "mongoose": "6.0.12",
+    "mongoose-findorcreate": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.4",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "concurrently": "^6.3.0",
     "dotenv": "^10.0.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
     "module-alias": "^2.2.2",
-    "mongoose": "5.10.18",
-    "telegraf": "^4.3.0",
-    "telegraf-i18n": "^6.6.0",
-    "typescript": "^4.3.2"
+    "nodemon": "^2.0.14",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
   },
   "_moduleAliases": {
     "@": "dist"

@@ -1,5 +1,5 @@
 name: English
 help: |
-  <b>Bot</b> allows you to see how Telegraf bots can be built.
+  <b>This bot</b> allows you to see how Telegram bots can be built.
 language: Please, select the language.
-language_selected: <b>Bot</b> now speaks English.
+language_selected: <b>This bot</b> now speaks English.

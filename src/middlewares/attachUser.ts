@@ -1,7 +1,9 @@
-import { findUser } from '@/models'
-import { Context } from 'telegraf'
+import { NextFunction } from 'grammy'
+import { findOrCreateUser } from '@/models/User'
+import Context from '@/models/Context'
 
-export async function attachUser(ctx: Context, next: () => void) {
-  ctx.dbuser = await findUser(ctx.from.id)
+export async function attachUser(ctx: Context, next: NextFunction) {
+  const { doc } = await findOrCreateUser(ctx.from.id)
+  ctx.dbuser = doc
   return next()
 }

@@ -1,8 +1,11 @@
-import { Context } from 'telegraf'
+import { NextFunction } from 'grammy'
+import Context from '@/models/Context'
 
-export async function ignoreOldMessageUpdates(ctx: Context, next: () => any) {
-  if (ctx.updateType === 'message') {
-    if (new Date().getTime() / 1000 - ctx.message.date < 5 * 60) {
+const threshold = 5 * 60 // 5 minutes
+export function ignoreOldMessageUpdates(ctx: Context, next: NextFunction) {
+  // Check if context update type is a message
+  if (ctx.message) {
+    if (new Date().getTime() / 1000 - ctx.message.date < threshold) {
       return next()
     } else {
       console.log(
