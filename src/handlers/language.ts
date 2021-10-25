@@ -16,7 +16,7 @@ export async function setLanguage(ctx: Context) {
     return
   }
   ctx.dbuser.language = ctx.callbackQuery.data
-  ctx.dbuser = await ctx.dbuser.save()
+  await ctx.dbuser.save()
   ctx.i18n.locale(ctx.callbackQuery.data)
   return ctx.editMessageText(ctx.i18n.t('language_selected'), {
     parse_mode: 'HTML',
@@ -30,7 +30,7 @@ function languageKeyboard() {
     const localeCode = locale.split('.')[0]
     const localeName = load(
       readFileSync(`${__dirname}/../../locales/${locale}`, 'utf8')
-    ).name
+    ).name as string
     keyboard.text(localeName, localeCode)
     if (index % 2 != 0) {
       keyboard.row()
