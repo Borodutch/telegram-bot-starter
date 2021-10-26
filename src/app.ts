@@ -18,6 +18,7 @@ import sequentialize from '@/middlewares/sequentialize'
 import startMongo from '@/helpers/startMongo'
 
 async function runApp() {
+  console.log('Starting app...')
   // Mongo
   await startMongo()
   console.log('Mongo connected')
