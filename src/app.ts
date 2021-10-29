@@ -5,15 +5,15 @@ import 'module-alias/register'
 import * as dotenv from 'dotenv'
 dotenv.config({ path: `${__dirname}/../.env` })
 // Dependencies
-import { attachUser } from '@/middlewares/attachUser'
-import { ignoreOldMessageUpdates } from '@/middlewares/ignoreOldMessageUpdates'
 import { localeActions } from '@/handlers/language'
 import { run } from '@grammyjs/runner'
-import { sendHelp } from '@/handlers/sendHelp'
 import { sendLanguage, setLanguage } from '@/handlers/language'
+import attachUser from '@/middlewares/attachUser'
 import bot from '@/helpers/bot'
 import configureI18n from '@/middlewares/configureI18n'
 import i18n from '@/helpers/i18n'
+import ignoreOldMessageUpdates from '@/middlewares/ignoreOldMessageUpdates'
+import sendHelp from '@/handlers/sendHelp'
 import sequentialize from '@/middlewares/sequentialize'
 import startMongo from '@/helpers/startMongo'
 
