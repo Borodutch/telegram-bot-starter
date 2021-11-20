@@ -6,7 +6,6 @@
   "repository": "https://github.com/Borodutch/telegram-bot-template",
   "author": "backmeupplz <backmeupplz@gmail.com>",
   "license": "MIT",
-  "private": false,
   "scripts": {
     "distribute": "yarn build-ts && node dist/app.js",
     "develop": "concurrently -k -i -p \"[{name}]\" -n \"Node,TypeScript\" -c \"yellow.bold,cyan.bold\" \"yarn watch-js\" \"yarn watch-ts\"",
@@ -42,5 +41,6 @@
   },
   "_moduleAliases": {
     "@": "dist"
-  }
+  },
+  "packageManager": "yarn@3.1.0"
 }
