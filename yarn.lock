@@ -687,6 +687,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-no-relative-import-paths@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "eslint-plugin-no-relative-import-paths@npm:1.0.8"
+  checksum: 8d31a5bb8d7bdc43bf33653c27bf74eb0912527d2ce7bfbf4aa7bb50ecd18a1ad107eaee362b2b1d821ac7ad4503462bf0b4d7ff76af5771d5b5dd46109fc620
+  languageName: node
+  linkType: hard
+
 "eslint-plugin-prettier@npm:^4.0.0":
   version: 4.0.0
   resolution: "eslint-plugin-prettier@npm:4.0.0"
@@ -2037,6 +2044,7 @@ __metadata:
     eslint: ^8.2.0
     eslint-config-prettier: ^8.3.0
     eslint-plugin-import: ^2.25.3
+    eslint-plugin-no-relative-import-paths: ^1.0.8
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-sort-imports-es6-autofix: ^0.6.0
     grammy: ^1.4.0
