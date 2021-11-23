@@ -5,10 +5,9 @@ import { getModelForClass, plugin, prop } from '@typegoose/typegoose'
 @plugin(findorcreate)
 export class User extends FindOrCreate {
   @prop({ required: true, index: true, unique: true })
-  id: number
-
+  id!: number
   @prop({ required: true, default: 'en' })
-  language: string
+  language!: string
 }
 
 const UserModel = getModelForClass(User, {
