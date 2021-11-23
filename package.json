@@ -8,10 +8,8 @@
   "license": "MIT",
   "scripts": {
     "distribute": "yarn build-ts && node dist/app.js",
-    "develop": "concurrently -k -i -p \"[{name}]\" -n \"Node,TypeScript\" -c \"yellow.bold,cyan.bold\" \"yarn watch-js\" \"yarn watch-ts\"",
+    "develop": "tsc-watch --skipLibCheck --onSuccess \"node dist/app.js\"",
     "build-ts": "tsc --skipLibCheck",
-    "watch-ts": "tsc -w --skipLibCheck",
-    "watch-js": "nodemon dist/app.js",
     "pretty": "prettier --check src",
     "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src"
   },
@@ -27,7 +25,6 @@
     "@types/node": "^16.11.9",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
-    "concurrently": "^6.4.0",
     "dotenv": "^10.0.0",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
@@ -35,8 +32,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
     "module-alias": "^2.2.2",
-    "nodemon": "^2.0.15",
     "prettier": "^2.4.1",
+    "tsc-watch": "^4.5.0",
     "typescript": "^4.5.2"
   },
   "_moduleAliases": {
