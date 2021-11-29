@@ -1,7 +1,6 @@
+import 'module-alias/register'
 import 'reflect-metadata'
 import 'source-map-support/register'
-// Setup @/ aliases for modules
-import 'module-alias/register'
 // Config dotenv
 import * as dotenv from 'dotenv'
 dotenv.config({ path: `${__dirname}/../.env` })
