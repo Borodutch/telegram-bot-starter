@@ -14,7 +14,8 @@
     "prettier",
     "sort-imports-es6-autofix",
     "import",
-    "no-relative-import-paths"
+    "no-relative-import-paths",
+    "eslint-plugin-node"
   ],
   "extends": [
     "eslint:recommended",
@@ -22,6 +23,7 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
+    "node/no-process-env": "error",
     "no-relative-import-paths/no-relative-import-paths": "error",
     "@typescript-eslint/no-unsafe-argument": "error",
     "@typescript-eslint/no-floating-promises": "error",

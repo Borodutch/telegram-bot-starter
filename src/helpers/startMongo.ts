@@ -1,11 +1,8 @@
 import { connect } from 'mongoose'
+import env from '@/helpers/env'
 
 function startMongo() {
-  const mongoUri = process.env.MONGO
-  if (!mongoUri) {
-    throw new Error('MONGO not set')
-  }
-  return connect(mongoUri)
+  return connect(env.MONGO)
 }
 
 export default startMongo

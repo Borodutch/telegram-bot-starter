@@ -17,6 +17,7 @@
     "@grammyjs/i18n": "^0.5.0",
     "@grammyjs/runner": "^1.0.3",
     "@typegoose/typegoose": "^9.2.0",
+    "envalid": "^7.2.2",
     "grammy": "^1.4.2",
     "mongoose": "^6.0.13",
     "mongoose-findorcreate": "^3.0.0"
@@ -31,6 +32,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-no-relative-import-paths": "^1.0.8",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
     "module-alias": "^2.2.2",

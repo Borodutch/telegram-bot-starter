@@ -1,10 +1,7 @@
 import { Bot } from 'grammy'
 import Context from '@/models/Context'
+import env from '@/helpers/env'
 
-if (!process.env.TOKEN) {
-  throw new Error('TOKEN is not defined')
-}
-
-const bot = new Bot<Context>(process.env.TOKEN)
+const bot = new Bot<Context>(env.TOKEN)
 
 export default bot
