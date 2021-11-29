@@ -35,6 +35,7 @@
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
     "module-alias": "^2.2.2",
     "prettier": "^2.5.0",
+    "source-map-support": "^0.5.21",
     "tsc-watch": "^4.5.0",
     "typescript": "^4.5.2"
   },

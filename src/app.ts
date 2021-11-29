@@ -1,4 +1,5 @@
 import 'reflect-metadata'
+import 'source-map-support/register'
 // Setup @/ aliases for modules
 import 'module-alias/register'
 // Config dotenv
