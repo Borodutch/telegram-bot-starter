@@ -130,10 +130,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^16.11.10":
+"@types/node@npm:*":
   version: 16.11.10
   resolution: "@types/node@npm:16.11.10"
   checksum: 9c79419c5c3d92d5825bffa30f3668533f598d8b63a73ea7fc24e47f162bdbed92b0f8e4f4261cc3314b39cee050e303366d2aa154abc95c63a572a110b8c160
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^16.11.11":
+  version: 16.11.11
+  resolution: "@types/node@npm:16.11.11"
+  checksum: 1c472bd63f23ca0e4effc96e6e0c693b83b027f613a1f41b6d1bd7791f65ce171a351e0a5c92575cb59e84ad0a930875397bfbbb91a7c925ddbbb558f7461af8
   languageName: node
   linkType: hard
 
@@ -1562,9 +1569,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongoose@npm:^6.0.13":
-  version: 6.0.13
-  resolution: "mongoose@npm:6.0.13"
+"mongoose@npm:^6.0.14":
+  version: 6.0.14
+  resolution: "mongoose@npm:6.0.14"
   dependencies:
     bson: ^4.2.2
     kareem: 2.3.2
@@ -1575,7 +1582,7 @@ __metadata:
     regexp-clone: 1.0.0
     sift: 13.5.2
     sliced: 1.0.1
-  checksum: 9f898a77a5b9335503946d1af3e78bae71f188636b2faabf8304b9382f2aeac31ef5a71639cbda13fa828e0cab883829845ee3d44e7944a5aedb877078ef0358
+  checksum: 8c54360a2ebcd436466f9b5b3a9a7639db4cf49c6c322f840bdcd7846ef947ef28e1cd5647af8c10417fe2207fdb3c6daba284705263d136a290517e290063ff
   languageName: node
   linkType: hard
 
@@ -2115,7 +2122,7 @@ __metadata:
     "@grammyjs/runner": ^1.0.3
     "@typegoose/typegoose": ^9.2.0
     "@types/js-yaml": ^4.0.5
-    "@types/node": ^16.11.10
+    "@types/node": ^16.11.11
     "@typescript-eslint/eslint-plugin": ^5.5.0
     "@typescript-eslint/parser": ^5.5.0
     dotenv: ^10.0.0
@@ -2129,7 +2136,7 @@ __metadata:
     eslint-plugin-sort-imports-es6-autofix: ^0.6.0
     grammy: ^1.4.2
     module-alias: ^2.2.2
-    mongoose: ^6.0.13
+    mongoose: ^6.0.14
     mongoose-findorcreate: ^3.0.0
     prettier: ^2.5.0
     source-map-support: ^0.5.21

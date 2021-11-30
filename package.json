@@ -19,12 +19,12 @@
     "@typegoose/typegoose": "^9.2.0",
     "envalid": "^7.2.2",
     "grammy": "^1.4.2",
-    "mongoose": "^6.0.13",
+    "mongoose": "^6.0.14",
     "mongoose-findorcreate": "^3.0.0"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.5",
-    "@types/node": "^16.11.10",
+    "@types/node": "^16.11.11",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
     "dotenv": "^10.0.0",
