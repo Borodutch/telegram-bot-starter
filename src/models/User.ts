@@ -1,8 +1,14 @@
 import * as findorcreate from 'mongoose-findorcreate'
 import { FindOrCreate } from '@typegoose/typegoose/lib/defaultClasses'
-import { getModelForClass, plugin, prop } from '@typegoose/typegoose'
+import {
+  getModelForClass,
+  modelOptions,
+  plugin,
+  prop,
+} from '@typegoose/typegoose'
 
 @plugin(findorcreate)
+@modelOptions({ schemaOptions: { timestamps: true } })
 export class User extends FindOrCreate {
   @prop({ required: true, index: true, unique: true })
   id!: number
@@ -10,9 +16,7 @@ export class User extends FindOrCreate {
   language!: string
 }
 
-const UserModel = getModelForClass(User, {
-  schemaOptions: { timestamps: true },
-})
+const UserModel = getModelForClass(User)
 
 export function findOrCreateUser(id: number) {
   return UserModel.findOrCreate({ id })
