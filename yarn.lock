@@ -33,6 +33,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@grammyjs/menu@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@grammyjs/menu@npm:1.0.2"
+  peerDependencies:
+    grammy: ^1.0.0
+  checksum: 1a097211579fbd17dfcd0aae745ace01b992ea155ec8bbd065a0ea294c9babbb5fbb33ee9e50d040533a9b40578a4d6be916346199c6118f7565c328f817b710
+  languageName: node
+  linkType: hard
+
 "@grammyjs/runner@npm:^1.0.3":
   version: 1.0.3
   resolution: "@grammyjs/runner@npm:1.0.3"
@@ -2130,6 +2139,7 @@ __metadata:
   resolution: "telegram-bot-starter@workspace:."
   dependencies:
     "@grammyjs/i18n": ^0.5.0
+    "@grammyjs/menu": ^1.0.2
     "@grammyjs/runner": ^1.0.3
     "@typegoose/typegoose": ^9.2.0
     "@types/js-yaml": ^4.0.5

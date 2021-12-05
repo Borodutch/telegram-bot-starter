@@ -3,14 +3,14 @@ import 'reflect-metadata'
 import 'source-map-support/register'
 
 import { ignoreOld, sequentialize } from 'grammy-middlewares'
-import { localeActions } from '@/handlers/language'
 import { run } from '@grammyjs/runner'
-import { sendLanguage, setLanguage } from '@/handlers/language'
 import attachUser from '@/middlewares/attachUser'
 import bot from '@/helpers/bot'
 import configureI18n from '@/middlewares/configureI18n'
+import handleLanguage from '@/handlers/language'
 import i18n from '@/helpers/i18n'
-import sendHelp from '@/handlers/sendHelp'
+import languageMenu from '@/menus/language'
+import sendHelp from '@/handlers/help'
 import startMongo from '@/helpers/startMongo'
 
 async function runApp() {
@@ -24,11 +24,11 @@ async function runApp() {
   bot.use(attachUser)
   bot.use(i18n.middleware())
   bot.use(configureI18n)
+  // Menus
+  bot.use(languageMenu)
   // Commands
   bot.command(['help', 'start'], sendHelp)
-  bot.command('language', sendLanguage)
-  // Actions
-  bot.callbackQuery(localeActions, setLanguage)
+  bot.command('language', handleLanguage)
   // Errors
   bot.catch(console.error)
   // Start bot
