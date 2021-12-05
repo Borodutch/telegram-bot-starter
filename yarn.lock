@@ -1139,6 +1139,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"grammy-middlewares@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "grammy-middlewares@npm:1.0.6"
+  dependencies:
+    "@grammyjs/runner": ^1.0.3
+    envalid: ^7.2.2
+    grammy: ^1.4.3
+  checksum: 71cf205bcf7d2e42808061b869f16d5d8f16a7fd7ad1ee40170692a3f3be94e9c841dc37d4c9fa99a609e91378cb9575413c16e320b155de949a7eeeb514c612
+  languageName: node
+  linkType: hard
+
 "grammy@npm:^1.4.3":
   version: 1.4.3
   resolution: "grammy@npm:1.4.3"
@@ -2135,6 +2146,7 @@ __metadata:
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-sort-imports-es6-autofix: ^0.6.0
     grammy: ^1.4.3
+    grammy-middlewares: ^1.0.6
     module-alias: ^2.2.2
     mongoose: ^6.0.14
     mongoose-findorcreate: ^3.0.0

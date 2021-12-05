@@ -19,6 +19,7 @@
     "dotenv": "^10.0.0",
     "envalid": "^7.2.2",
     "grammy": "^1.4.3",
+    "grammy-middlewares": "^1.0.6",
     "mongoose": "^6.0.14",
     "mongoose-findorcreate": "^3.0.0"
   },

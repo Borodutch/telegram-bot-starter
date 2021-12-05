@@ -2,6 +2,7 @@ import 'module-alias/register'
 import 'reflect-metadata'
 import 'source-map-support/register'
 
+import { ignoreOld, sequentialize } from 'grammy-middlewares'
 import { localeActions } from '@/handlers/language'
 import { run } from '@grammyjs/runner'
 import { sendLanguage, setLanguage } from '@/handlers/language'
@@ -9,9 +10,7 @@ import attachUser from '@/middlewares/attachUser'
 import bot from '@/helpers/bot'
 import configureI18n from '@/middlewares/configureI18n'
 import i18n from '@/helpers/i18n'
-import ignoreOldMessageUpdates from '@/middlewares/ignoreOldMessageUpdates'
 import sendHelp from '@/handlers/sendHelp'
-import sequentialize from '@/middlewares/sequentialize'
 import startMongo from '@/helpers/startMongo'
 
 async function runApp() {
@@ -20,8 +19,8 @@ async function runApp() {
   await startMongo()
   console.log('Mongo connected')
   // Middlewares
-  bot.use(sequentialize)
-  bot.use(ignoreOldMessageUpdates)
+  bot.use(sequentialize())
+  bot.use(ignoreOld())
   bot.use(attachUser)
   bot.use(i18n.middleware())
   bot.use(configureI18n)
