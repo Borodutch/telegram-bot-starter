@@ -33,16 +33,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@grammyjs/menu@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "@grammyjs/menu@npm:1.0.2"
+"@grammyjs/menu@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "@grammyjs/menu@npm:1.0.4"
   peerDependencies:
     grammy: ^1.0.0
-  checksum: 1a097211579fbd17dfcd0aae745ace01b992ea155ec8bbd065a0ea294c9babbb5fbb33ee9e50d040533a9b40578a4d6be916346199c6118f7565c328f817b710
+  checksum: bb53965399780d25566f85dfbf717c18324a1fbbd82e54722e063e151dbbe2f07e0a60723d52f45bd83b79e2b2cf678e9a114ac7bd7ebc1e33721bf5be7abbfc
   languageName: node
   linkType: hard
 
-"@grammyjs/runner@npm:^1.0.3":
+"@grammyjs/runner@npm:^1, @grammyjs/runner@npm:^1.0.3":
   version: 1.0.3
   resolution: "@grammyjs/runner@npm:1.0.3"
   dependencies:
@@ -51,10 +51,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@grammyjs/types@npm:^2.3.1":
-  version: 2.3.1
-  resolution: "@grammyjs/types@npm:2.3.1"
-  checksum: 4ab78d5cba5684bb55487a1b024f793a2371d72f61ec97b339599f90604d9a5245b40271fe15f217ec9a75b4a60c18a1a9af60836c4213f8951a6a74b05372fe
+"@grammyjs/types@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "@grammyjs/types@npm:2.4.0"
+  checksum: 08db0ab2ab55fed3760296bdc14c7732eb7710e06d8fe4b82e63c9a2d490979e5899f6fd0109ed49b3e881bc57b16bffdc43c6b5f50e64ac136f5607fb32536e
   languageName: node
   linkType: hard
 
@@ -103,18 +103,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typegoose/typegoose@npm:^9.2.0":
-  version: 9.2.0
-  resolution: "@typegoose/typegoose@npm:9.2.0"
+"@typegoose/typegoose@npm:^9.3.1":
+  version: 9.3.1
+  resolution: "@typegoose/typegoose@npm:9.3.1"
   dependencies:
     lodash: ^4.17.20
-    loglevel: ^1.7.0
+    loglevel: ^1.8.0
     reflect-metadata: ^0.1.13
     semver: ^7.3.2
     tslib: ^2.3.1
   peerDependencies:
-    mongoose: ~6.0.11
-  checksum: f5411fcd49f3f99d1662b89256480060ca0458f40cd21c3a3e3adc52782c30a646e2e1ad0b9686b8d0c18b8ce3091b610bf9baf784d136197ad33bdf8f39ca72
+    mongoose: ~6.0.14
+  checksum: 8345a6649558b222ea17954a1bbdfdf462c8d10cfa68f0389fdc1bb2f1fa7a5f2ff0ad3fcd0cb213d30900207c7740545870f697416488662979b2e5e57038e7
   languageName: node
   linkType: hard
 
@@ -146,10 +146,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.11.11":
-  version: 16.11.11
-  resolution: "@types/node@npm:16.11.11"
-  checksum: 1c472bd63f23ca0e4effc96e6e0c693b83b027f613a1f41b6d1bd7791f65ce171a351e0a5c92575cb59e84ad0a930875397bfbbb91a7c925ddbbb558f7461af8
+"@types/node@npm:^16.11.12":
+  version: 16.11.12
+  resolution: "@types/node@npm:16.11.12"
+  checksum: a3feb346d61a56f5a137c29bb8c63cfa3cc02e184b9dffdc18ef1528dcce55596e570575215a2e39e6ce69343eeb2a5ba71c271938f1dc8db4cc393902855412
   languageName: node
   linkType: hard
 
@@ -170,12 +170,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.5.0":
-  version: 5.5.0
-  resolution: "@typescript-eslint/eslint-plugin@npm:5.5.0"
+"@typescript-eslint/eslint-plugin@npm:^5.6.0":
+  version: 5.6.0
+  resolution: "@typescript-eslint/eslint-plugin@npm:5.6.0"
   dependencies:
-    "@typescript-eslint/experimental-utils": 5.5.0
-    "@typescript-eslint/scope-manager": 5.5.0
+    "@typescript-eslint/experimental-utils": 5.6.0
+    "@typescript-eslint/scope-manager": 5.6.0
     debug: ^4.3.2
     functional-red-black-tree: ^1.0.1
     ignore: ^5.1.8
@@ -188,66 +188,66 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 49e68e44fe63b9202fb148811450637b8025f14e3e9aef5762dfc4e11b2edcd972948b60e849a0c93f3d381492d39dc45b032bc2b5a74a3abdf07fbb8d2ea0b3
+  checksum: aeae8c2de535cad6032c0b27fbb86baccd07788319efd5a97d828bc03a85eae5e635aff794a1d7a2b3ee2a84d6d6d7e68c42438fee62af42fead89f381df7bca
   languageName: node
   linkType: hard
 
-"@typescript-eslint/experimental-utils@npm:5.5.0":
-  version: 5.5.0
-  resolution: "@typescript-eslint/experimental-utils@npm:5.5.0"
+"@typescript-eslint/experimental-utils@npm:5.6.0":
+  version: 5.6.0
+  resolution: "@typescript-eslint/experimental-utils@npm:5.6.0"
   dependencies:
     "@types/json-schema": ^7.0.9
-    "@typescript-eslint/scope-manager": 5.5.0
-    "@typescript-eslint/types": 5.5.0
-    "@typescript-eslint/typescript-estree": 5.5.0
+    "@typescript-eslint/scope-manager": 5.6.0
+    "@typescript-eslint/types": 5.6.0
+    "@typescript-eslint/typescript-estree": 5.6.0
     eslint-scope: ^5.1.1
     eslint-utils: ^3.0.0
   peerDependencies:
     eslint: "*"
-  checksum: 99f4edfb233aa4cb20caf15e92cbecf7415cc1e43cef9b52afe04012844b1fb7fae5e863bdc02235d66a1a9f6d27e1f9c3b99da13156699d6d20aea1b4e0139b
+  checksum: f708f38be41a3cb4c8c2c8573a660ce7de88f50becf53bea6679fcc8a56ba73c59f2e1a94f5a7773c8cccaf0c2e4dda679564c67764c989f8137594d6589aa4c
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.5.0":
-  version: 5.5.0
-  resolution: "@typescript-eslint/parser@npm:5.5.0"
+"@typescript-eslint/parser@npm:^5.6.0":
+  version: 5.6.0
+  resolution: "@typescript-eslint/parser@npm:5.6.0"
   dependencies:
-    "@typescript-eslint/scope-manager": 5.5.0
-    "@typescript-eslint/types": 5.5.0
-    "@typescript-eslint/typescript-estree": 5.5.0
+    "@typescript-eslint/scope-manager": 5.6.0
+    "@typescript-eslint/types": 5.6.0
+    "@typescript-eslint/typescript-estree": 5.6.0
     debug: ^4.3.2
   peerDependencies:
     eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 971640eea5bb02c86bc993b2035842c85d6d9f500f1846ce7e3f616e78ad99224a114ada75b0cb2401ba773932895230748953518658724d5500a5f9d79861c6
+  checksum: 7d703cfe6b0a33b35139f509bcc16065f234a11603244cee4f55e193112d93ed9cd4a6db4bcf57c6b766e8a4d602b4f2400cb8d52ea02b3fc2cdfb64e5b88a3e
   languageName: node
   linkType: hard
 
-"@typescript-eslint/scope-manager@npm:5.5.0":
-  version: 5.5.0
-  resolution: "@typescript-eslint/scope-manager@npm:5.5.0"
+"@typescript-eslint/scope-manager@npm:5.6.0":
+  version: 5.6.0
+  resolution: "@typescript-eslint/scope-manager@npm:5.6.0"
   dependencies:
-    "@typescript-eslint/types": 5.5.0
-    "@typescript-eslint/visitor-keys": 5.5.0
-  checksum: 6f96c5534d997d6246bd9528a719039e59f01b77476ba2837bbc4b17288305537f49abbf812cfa9911b67b0c265b2616b198537b3d963e7e7747b25940e38f23
+    "@typescript-eslint/types": 5.6.0
+    "@typescript-eslint/visitor-keys": 5.6.0
+  checksum: 6fea574f6e911eb25258e75fc738a36099678ba96cd447d18da28209bfa5326ba4e97aa7f254ccd0415aec15ea70d0b6fb860dd985d4f9042df57d4a227ae9d1
   languageName: node
   linkType: hard
 
-"@typescript-eslint/types@npm:5.5.0":
-  version: 5.5.0
-  resolution: "@typescript-eslint/types@npm:5.5.0"
-  checksum: 4a8f6902affba3ecc84f486508f42134571bfb28f18f260a4858bf2878105deca711a89c29c60dfd00b9eb0fea8a814ecf51392e9cc91a77fafc824d2bc947d8
+"@typescript-eslint/types@npm:5.6.0":
+  version: 5.6.0
+  resolution: "@typescript-eslint/types@npm:5.6.0"
+  checksum: 63abd287a265cb1bed06067117c11bf1c69c5db1a14ea59e13564dcd9d513ae2dac67969541f21381500139d40bbea67b269c32607d3204ab24ea8900c449293
   languageName: node
   linkType: hard
 
-"@typescript-eslint/typescript-estree@npm:5.5.0":
-  version: 5.5.0
-  resolution: "@typescript-eslint/typescript-estree@npm:5.5.0"
+"@typescript-eslint/typescript-estree@npm:5.6.0":
+  version: 5.6.0
+  resolution: "@typescript-eslint/typescript-estree@npm:5.6.0"
   dependencies:
-    "@typescript-eslint/types": 5.5.0
-    "@typescript-eslint/visitor-keys": 5.5.0
+    "@typescript-eslint/types": 5.6.0
+    "@typescript-eslint/visitor-keys": 5.6.0
     debug: ^4.3.2
     globby: ^11.0.4
     is-glob: ^4.0.3
@@ -256,17 +256,17 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 4a8ec6bacf446cdf030ac0b49f67b26c4d259ba70862e7622c7bd29a567a0815970ff902ab35f1f48423e217e97944d7f746779d34dbaf46423894e6a546055d
+  checksum: eb5cc53ddad6fe7772677798bcb682e859ac82674cf0adcdd7105814ddecdbb9d58a4a27f87caa68eb9f40dcc5ce1b0ce87db3cf50deffa5f7fa6c354c8bee68
   languageName: node
   linkType: hard
 
-"@typescript-eslint/visitor-keys@npm:5.5.0":
-  version: 5.5.0
-  resolution: "@typescript-eslint/visitor-keys@npm:5.5.0"
+"@typescript-eslint/visitor-keys@npm:5.6.0":
+  version: 5.6.0
+  resolution: "@typescript-eslint/visitor-keys@npm:5.6.0"
   dependencies:
-    "@typescript-eslint/types": 5.5.0
+    "@typescript-eslint/types": 5.6.0
     eslint-visitor-keys: ^3.0.0
-  checksum: 490be847c58d7159d2d5e0d0686ce4fdd80c61b085caba58d4cba04c4905a56e31c375db674e331fdf7ed96aa16a98f6f7471d656f978799b172bcdb62ca742b
+  checksum: c1d9e2596ff4f03b52857a77ff373ca82e66c1883ea818f28c3a18e5c4877c4ac6367874f4681223e9134bcebd6560f95b9a3d12c411060d567a17d10113e9e5
   languageName: node
   linkType: hard
 
@@ -403,7 +403,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bson@npm:^4.2.2, bson@npm:^4.5.4":
+"bson@npm:^4.2.2, bson@npm:^4.6.0":
   version: 4.6.0
   resolution: "bson@npm:4.6.0"
   dependencies:
@@ -600,7 +600,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"envalid@npm:^7.2.2":
+"envalid@npm:^7, envalid@npm:^7.2.2":
   version: 7.2.2
   resolution: "envalid@npm:7.2.2"
   dependencies:
@@ -830,9 +830,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.4.0":
-  version: 8.4.0
-  resolution: "eslint@npm:8.4.0"
+"eslint@npm:^8.4.1":
+  version: 8.4.1
+  resolution: "eslint@npm:8.4.1"
   dependencies:
     "@eslint/eslintrc": ^1.0.5
     "@humanwhocodes/config-array": ^0.9.2
@@ -874,7 +874,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 12eb9e7af353d4b8afbf5417f923a93e1da8aa065d97026d98c3e7f69442639eae5c013a5251fe20273dbbe9ad6f36445a985b3e9929e911dda79fb40e308eb0
+  checksum: d962cd7cd0f68ddc2412f47154b8992ad3af987cf47fa6e60e51a2b7d32a91f934388f7d29e2c45b16b7ac69f0d220d0a483189ec6ba43a8a480110c34f158f9
   languageName: node
   linkType: hard
 
@@ -1148,26 +1148,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"grammy-middlewares@npm:^1.0.6":
-  version: 1.0.6
-  resolution: "grammy-middlewares@npm:1.0.6"
+"grammy-middlewares@npm:^1.0.11":
+  version: 1.0.11
+  resolution: "grammy-middlewares@npm:1.0.11"
   dependencies:
-    "@grammyjs/runner": ^1.0.3
-    envalid: ^7.2.2
-    grammy: ^1.4.3
-  checksum: 71cf205bcf7d2e42808061b869f16d5d8f16a7fd7ad1ee40170692a3f3be94e9c841dc37d4c9fa99a609e91378cb9575413c16e320b155de949a7eeeb514c612
+    "@grammyjs/runner": ^1
+    envalid: ^7
+    grammy: ^1
+  checksum: f18abb2d2d892332a26731e4bf4e9f3cec4098aea944730ab096060ddeef076164281f6b20c64c26d45b68cfe40aea303c4407d95f580b571d8ac908b0e0175c
   languageName: node
   linkType: hard
 
-"grammy@npm:^1.4.3":
-  version: 1.4.3
-  resolution: "grammy@npm:1.4.3"
+"grammy@npm:^1, grammy@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "grammy@npm:1.5.0"
   dependencies:
-    "@grammyjs/types": ^2.3.1
+    "@grammyjs/types": ^2.4.0
     abort-controller: ^3.0.0
     debug: ^4.3.3
     node-fetch: ^2.6.5
-  checksum: 8456a2b6f52caae6021259795dafe9ae7727fd7f870ebc873e5831fef7cdf1216ca91991c160ecebec3cd8f2f4c0e0220124bf78d41fcc020a9c04ac1622bd0b
+  checksum: 395bdbdc80e80cb54d4edd2de47df37ec54400455cc3972d8750510976941931430f4120cead00442b88d023f2ac307e4481f232c2b12a6b76f7b9d0c98c323d
   languageName: node
   linkType: hard
 
@@ -1487,7 +1487,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loglevel@npm:^1.7.0":
+"loglevel@npm:^1.8.0":
   version: 1.8.0
   resolution: "loglevel@npm:1.8.0"
   checksum: 41aeea17de24aba8dba68084a31fe9189648bce4f39c1277e021bb276c3c53a75b0d337395919cf271068ad40ecefabad0e4fdeb4a8f11908beee532b898f4a7
@@ -1557,7 +1557,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb-connection-string-url@npm:^2.1.0":
+"mongodb-connection-string-url@npm:^2.2.0":
   version: 2.2.0
   resolution: "mongodb-connection-string-url@npm:2.2.0"
   dependencies:
@@ -1567,18 +1567,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb@npm:4.1.4":
-  version: 4.1.4
-  resolution: "mongodb@npm:4.1.4"
+"mongodb@npm:4.2.1":
+  version: 4.2.1
+  resolution: "mongodb@npm:4.2.1"
   dependencies:
-    bson: ^4.5.4
+    bson: ^4.6.0
     denque: ^2.0.1
-    mongodb-connection-string-url: ^2.1.0
+    mongodb-connection-string-url: ^2.2.0
     saslprep: ^1.0.3
   dependenciesMeta:
     saslprep:
       optional: true
-  checksum: 8d5a3caf349bdf10d0f14ab73f55e3cc194bc9e0f740a3b0e1e089fa721af725e27d2f4916c837013e1ba2561bded9df11253dae4b1c687c341e876a36ff4815
+  checksum: 3bd32c0afe538ee1c7166b69721941c2fc2fe2c30bada62d3178530942a119d83083a13b9263005f9b468acc5b25df82f848b809a2bb67169ea2074d4ffb4cef
   languageName: node
   linkType: hard
 
@@ -1589,20 +1589,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongoose@npm:^6.0.14":
-  version: 6.0.14
-  resolution: "mongoose@npm:6.0.14"
+"mongoose@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "mongoose@npm:6.1.0"
   dependencies:
     bson: ^4.2.2
     kareem: 2.3.2
-    mongodb: 4.1.4
+    mongodb: 4.2.1
     mpath: 0.8.4
     mquery: 4.0.0
     ms: 2.1.2
     regexp-clone: 1.0.0
     sift: 13.5.2
     sliced: 1.0.1
-  checksum: 8c54360a2ebcd436466f9b5b3a9a7639db4cf49c6c322f840bdcd7846ef947ef28e1cd5647af8c10417fe2207fdb3c6daba284705263d136a290517e290063ff
+  checksum: 51110fbd25ed5d63c45459ddf51983887f02cb4e334db248d0c151f05df36d64694e593e401ce2affde5590ce256d1b38d93adbbadf819ac133c5f63b451ab17
   languageName: node
   linkType: hard
 
@@ -2139,26 +2139,26 @@ __metadata:
   resolution: "telegram-bot-starter@workspace:."
   dependencies:
     "@grammyjs/i18n": ^0.5.0
-    "@grammyjs/menu": ^1.0.2
+    "@grammyjs/menu": ^1.0.4
     "@grammyjs/runner": ^1.0.3
-    "@typegoose/typegoose": ^9.2.0
+    "@typegoose/typegoose": ^9.3.1
     "@types/js-yaml": ^4.0.5
-    "@types/node": ^16.11.11
-    "@typescript-eslint/eslint-plugin": ^5.5.0
-    "@typescript-eslint/parser": ^5.5.0
+    "@types/node": ^16.11.12
+    "@typescript-eslint/eslint-plugin": ^5.6.0
+    "@typescript-eslint/parser": ^5.6.0
     dotenv: ^10.0.0
     envalid: ^7.2.2
-    eslint: ^8.4.0
+    eslint: ^8.4.1
     eslint-config-prettier: ^8.3.0
     eslint-plugin-import: ^2.25.3
     eslint-plugin-no-relative-import-paths: ^1.0.8
     eslint-plugin-node: ^11.1.0
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-sort-imports-es6-autofix: ^0.6.0
-    grammy: ^1.4.3
-    grammy-middlewares: ^1.0.6
+    grammy: ^1.5.0
+    grammy-middlewares: ^1.0.11
     module-alias: ^2.2.2
-    mongoose: ^6.0.14
+    mongoose: ^6.1.0
     mongoose-findorcreate: ^3.0.0
     prettier: ^2.5.1
     source-map-support: ^0.5.21
