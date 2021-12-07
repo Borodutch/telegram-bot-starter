@@ -18,14 +18,15 @@ async function runApp() {
   // Mongo
   await startMongo()
   console.log('Mongo connected')
-  // Middlewares
-  bot.use(sequentialize())
-  bot.use(ignoreOld())
-  bot.use(attachUser)
-  bot.use(i18n.middleware())
-  bot.use(configureI18n)
-  // Menus
-  bot.use(languageMenu)
+  bot
+    // Middlewares
+    .use(sequentialize())
+    .use(ignoreOld())
+    .use(attachUser)
+    .use(i18n.middleware())
+    .use(configureI18n)
+    // Menus
+    .use(languageMenu)
   // Commands
   bot.command(['help', 'start'], sendHelp)
   bot.command('language', handleLanguage)
