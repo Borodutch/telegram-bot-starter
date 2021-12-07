@@ -1,17 +1,19 @@
 import { Menu } from '@grammyjs/menu'
+import { cwd } from 'process'
 import { load } from 'js-yaml'
 import { readFileSync, readdirSync } from 'fs'
+import { resolve } from 'path'
 import Context from '@/models/Context'
 
 interface YamlWithName {
   name: string
 }
 
-const localeFilePaths = readdirSync(`${__dirname}/../../locales`)
+const localeFilePaths = readdirSync(resolve(cwd(), 'locales'))
 
 const localeFile = (path: string) => {
   return load(
-    readFileSync(`${__dirname}/../../locales/${path}`, 'utf8')
+    readFileSync(resolve(cwd(), 'locales', path), 'utf8')
   ) as YamlWithName
 }
 
