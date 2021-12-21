@@ -11,8 +11,12 @@ export class User {
 const UserModel = getModelForClass(User)
 
 export function findOrCreateUser(id: number) {
-  return UserModel.findOneAndUpdate({ id }, undefined, {
-    upsert: true,
-    new: true,
-  })
+  return UserModel.findOneAndUpdate(
+    { id },
+    {},
+    {
+      upsert: true,
+      new: true,
+    }
+  )
 }
