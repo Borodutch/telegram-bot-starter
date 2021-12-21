@@ -1582,13 +1582,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongoose-findorcreate@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "mongoose-findorcreate@npm:3.0.0"
-  checksum: d4c28ffb2b176cdfe705281a8815df22ce35a44e2e77a770edf49891fb146226d659d6b85532086f7fe0c9b79d0c4237980ec31d4cb85b30e130f3e0be68b93c
-  languageName: node
-  linkType: hard
-
 "mongoose@npm:^6.1.0":
   version: 6.1.0
   resolution: "mongoose@npm:6.1.0"
@@ -2159,7 +2152,6 @@ __metadata:
     grammy-middlewares: ^1.0.11
     module-alias: ^2.2.2
     mongoose: ^6.1.0
-    mongoose-findorcreate: ^3.0.0
     prettier: ^2.5.1
     source-map-support: ^0.5.21
     tsc-watch: ^4.5.0
