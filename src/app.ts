@@ -8,9 +8,11 @@ import attachUser from '@/middlewares/attachUser'
 import bot from '@/helpers/bot'
 import configureI18n from '@/middlewares/configureI18n'
 import handleLanguage from '@/handlers/language'
+import handleSimple from '@/handlers/simple'
 import i18n from '@/helpers/i18n'
 import languageMenu from '@/menus/language'
 import sendHelp from '@/handlers/help'
+import simpleMenu from '@/menus/simple'
 import startMongo from '@/helpers/startMongo'
 
 async function runApp() {
@@ -27,9 +29,11 @@ async function runApp() {
     .use(configureI18n)
     // Menus
     .use(languageMenu)
+    .use(simpleMenu)
   // Commands
   bot.command(['help', 'start'], sendHelp)
   bot.command('language', handleLanguage)
+  bot.command('simpleDynamic', handleSimple)
   // Errors
   bot.catch(console.error)
   // Start bot
