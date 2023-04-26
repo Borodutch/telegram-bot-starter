@@ -2,9 +2,9 @@ import { getModelForClass, modelOptions, prop } from '@typegoose/typegoose'
 
 @modelOptions({ schemaOptions: { timestamps: true } })
 export class User {
-  @prop({ required: true, index: true, unique: true })
+  @prop({ index: true, required: true, unique: true })
   id!: number
-  @prop({ required: true, default: 'en' })
+  @prop({ default: 'en', required: true })
   language!: string
 }
 
@@ -15,8 +15,8 @@ export function findOrCreateUser(id: number) {
     { id },
     {},
     {
-      upsert: true,
       new: true,
+      upsert: true,
     }
   )
 }
